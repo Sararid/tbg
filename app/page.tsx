@@ -7,7 +7,7 @@ import Pass from "./pages/Pass";
 import "./App.css";
 
 function Home() {
-  const password = process.env.REACT_APP_ENVPASSWORD
+  const password = process.env.APP_ENVPASSWORD
 
   const [inputValue, setInputValue] = useState("")
   const handleInput = (ev: any) => {
@@ -17,8 +17,9 @@ function Home() {
   console.log("🚀 ~ file: App.tsx:9 ~ App ~ password:", inputValue)
   return (
     <div className="App" >
+      <Pass onChange={handleInput} value={inputValue} />
 
-      {inputValue ? <Home2 /> : <Pass onChange={handleInput} value={inputValue} />}
+    {/* {inputValue === process.env.HONEY ? <Home2 /> : <Pass onChange={handleInput} value={inputValue} />} */}
     </div >
   );
 }
