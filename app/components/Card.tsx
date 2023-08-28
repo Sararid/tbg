@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import "./Card.scss"
 import Gift from "./Gift"
+import Image from "next/image";
 function Card() {
   const [isShown, setIsShown] = useState(false);
 
@@ -22,6 +23,12 @@ function Card() {
           <div className="balloonThree" />
           <div className="balloonFour" />
         </div>
+        <div > <Image
+          src="/pic.png"
+          width={1500}
+          height={1500}
+          alt="Picture of the author"
+        /></div>
       </div>
       <div className="cardInside">
         <h3 className="back">HAPPY BIRTHDAY Gerry! <span role="img" aria-label="dog">🎂</span></h3>

@@ -7,6 +7,7 @@
     transform: perspective(2500px);
     transition: 1s;
 }
+
 .birthdayCard:hover {
     transform: perspective(2500px) rotate(5deg);
     box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2),
@@ -25,7 +26,7 @@
     position: relative;
     background-color: #fff;
     width: 300px;
-        height: 450px;
+    height: 450px;
     overflow: hidden;
     transform-origin: left;
     box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2),
@@ -79,8 +80,8 @@
     left: 190px;
     top: 50px;
 }
-.name:before
-.balloonOne:before,
+
+.name:before .balloonOne:before,
 .balloonTwo:before,
 .balloonThree:before,
 .balloonFour:before {
@@ -92,8 +93,8 @@
     top: 95px;
     left: 43px;
 }
-.name:after
-.balloonOne:after,
+
+.name:after .balloonOne:after,
 .balloonTwo:after,
 .balloonThree:after,
 .balloonFour:after {
@@ -105,7 +106,7 @@
     left: 37px;
 }
 
-.balloonOne:after .name:after{
+.balloonOne:after .name:after {
     border-bottom: 10px solid #ef476f;
 }
 
@@ -121,10 +122,10 @@
     border-bottom: 10px solid #118ab2;
 }
 
-.cardInside  {
+.cardInside {
     position: absolute;
     background-color: #fff;
-width: 300px;
+    width: 300px;
     height: 450px;
     z-index: -1;
     left: 0;
@@ -134,7 +135,7 @@ width: 300px;
 
 p {
     font-family: "Brush Script MT", cursive;
-        font-size: 20px;
+    font-size: 20px;
     margin: 35px;
     color: #333;
 }
@@ -146,6 +147,7 @@ p {
     top: 300px;
     color: #333;
 }
+
 .gift {
     position: absolute;
     width: 150px;
@@ -158,12 +160,15 @@ p {
     font-family: "Brush Script MT", cursive;
     font-size: 20px;
 }
+
 .back {
+    margin-top: 15px;
     font-family: Tahoma, sans-serif;
-        font-size: 20px;
+    font-size: 20px;
     color: #333;
     text-align: center;
-  
+
     outline-color: #333;
     outline-style: dotted;
-padding-bottom: 15px}
+    padding-bottom: 15px
+}

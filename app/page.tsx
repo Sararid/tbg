@@ -17,9 +17,9 @@ function Home() {
   console.log("🚀 ~ file: App.tsx:9 ~ App ~ password:", inputValue)
   return (
     <div className="App" >
-      <Pass onChange={handleInput} value={inputValue} />
-
-    {/* {inputValue === process.env.HONEY ? <Home2 /> : <Pass onChange={handleInput} value={inputValue} />} */}
+      {/* <Pass onChange={handleInput} value={inputValue} /> */}
+      <Home2 />
+    {/* {inputValue === process.env.HONEY ? <Home2 /> : <Pass onChange={handleInput} value={inputValue} />}  */}
     </div >
   );
 }
